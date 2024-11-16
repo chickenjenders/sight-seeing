@@ -1,0 +1,67 @@
+[gd_scene load_steps=6 format=3 uid="uid://rqmu6ta5um8u"]
+
+[ext_resource type="Script" path="res://Scripts/run_mushroom.gd" id="1_unfoo"]
+[ext_resource type="Texture2D" uid="uid://bmbjfcvxtenir" path="res://fonts/IMG_0049.jpg" id="3_ve58r"]
+[ext_resource type="Texture2D" uid="uid://cc6x12t6ldtyv" path="res://fonts/IMG_0050.jpg" id="4_jeyjx"]
+[ext_resource type="Texture2D" uid="uid://lsd6lyrtu3k7" path="res://fonts/IMG_0051.jpg" id="5_hknpq"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kt2cy"]
+resource_name = "run"
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"new_animation",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_ve58r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_jeyjx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_hknpq")
+}],
+"loop": true,
+"name": &"run",
+"speed": 2.0
+}]
+
+[node name="run_scene" type="Node2D"]
+script = ExtResource("1_unfoo")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(808.715, 458.102)
+scale = Vector2(1.02177, 1.05312)
+sprite_frames = SubResource("SpriteFrames_kt2cy")
+animation = &"run"
+autoplay = "run"
+
+[node name="Button" type="Button" parent="."]
+offset_left = 441.0
+offset_top = 484.0
+offset_right = 678.0
+offset_bottom = 569.0
+text = "run!"
+
+[node name="Button2" type="Button" parent="."]
+visible = false
+offset_left = 777.0
+offset_top = 114.0
+offset_right = 1067.0
+offset_bottom = 238.0
+text = "run!"
+
+[node name="Button3" type="Button" parent="."]
+visible = false
+offset_left = 229.0
+offset_top = 148.0
+offset_right = 425.0
+offset_bottom = 238.0
+text = "run!"
+
+[connection signal="animation_looped" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_looped"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]

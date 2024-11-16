@@ -1,0 +1,69 @@
+[gd_scene load_steps=4 format=3 uid="uid://dvwdw7xts4gsc"]
+
+[ext_resource type="Script" path="res://Scripts/opening.gd" id="1_12vr5"]
+[ext_resource type="FontFile" uid="uid://bv88h5obgefg8" path="res://fonts/VCR_OSD_MONO_1.001.ttf" id="1_ox8jl"]
+[ext_resource type="FontFile" uid="uid://cj30ftt3q6sy7" path="res://fonts/HelpMe.ttf" id="3_m7g0v"]
+
+[node name="Opening" type="Node2D"]
+script = ExtResource("1_12vr5")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1602.0
+offset_bottom = 912.0
+color = Color(0.000113828, 0.000113828, 0.000113828, 1)
+
+[node name="First" type="Label" parent="."]
+offset_left = 229.0
+offset_top = 100.0
+offset_right = 1372.0
+offset_bottom = 159.0
+theme_override_fonts/font = ExtResource("1_ox8jl")
+theme_override_font_sizes/font_size = 30
+text = "I decided to go on my very first solo hike at Sightseer's Trail. "
+
+[node name="Second" type="Label" parent="."]
+offset_left = 139.0
+offset_top = 284.0
+offset_right = 1490.0
+offset_bottom = 357.0
+theme_override_fonts/font = ExtResource("1_ox8jl")
+theme_override_font_sizes/font_size = 30
+text = "I don't have much experience hiking, so I forgot to bring any food or water."
+autowrap_mode = 2
+
+[node name="Third" type="Label" parent="."]
+offset_left = 263.0
+offset_top = 483.0
+offset_right = 1300.0
+offset_bottom = 557.0
+theme_override_fonts/font = ExtResource("1_ox8jl")
+theme_override_font_sizes/font_size = 30
+text = "Thankfully, I found some edible things on the way to trail."
+
+[node name="Start" type="Button" parent="."]
+offset_left = 670.0
+offset_top = 658.0
+offset_right = 949.0
+offset_bottom = 744.0
+theme_override_colors/font_hover_pressed_color = Color(0.498039, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0.498039, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0.498039, 0, 0, 1)
+theme_override_colors/icon_pressed_color = Color(0.498039, 0, 0, 1)
+theme_override_colors/icon_hover_color = Color(0.498039, 0, 0, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0.498039, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_m7g0v")
+theme_override_font_sizes/font_size = 50
+text = "START"
+flat = true
+
+[node name="Continue" type="Label" parent="."]
+offset_left = 1215.0
+offset_top = 826.0
+offset_right = 1525.0
+offset_bottom = 869.0
+theme_override_fonts/font = ExtResource("1_ox8jl")
+theme_override_font_sizes/font_size = 25
+text = "Click to continue..."
+
+[connection signal="pressed" from="Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="Start" to="." method="_on_button_pressed"]

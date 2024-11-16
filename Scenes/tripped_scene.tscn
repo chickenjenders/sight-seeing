@@ -1,0 +1,49 @@
+[gd_scene load_steps=7 format=3 uid="uid://b1rcw0n14bc06"]
+
+[ext_resource type="Script" path="res://Scripts/tripped_scene.gd" id="1_fh2mi"]
+[ext_resource type="Texture2D" uid="uid://b86i2iipsjpw0" path="res://assets/Screenshot 2024-11-17 at 6.51.38 PM.png" id="2_1idr7"]
+[ext_resource type="PackedScene" uid="uid://d3mpxfe57c8ux" path="res://Scenes/textbox.tscn" id="3_lko8r"]
+[ext_resource type="FontFile" uid="uid://bv88h5obgefg8" path="res://fonts/VCR_OSD_MONO_1.001.ttf" id="3_uf5hh"]
+[ext_resource type="Texture2D" uid="uid://cnswirq6xjdw5" path="res://fonts/Screenshot 2024-11-17 at 9.00.01 PM.png" id="4_wu62c"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1mrae"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_wu62c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_1idr7")
+}],
+"loop": false,
+"name": &"trip",
+"speed": 2.0
+}]
+
+[node name="tripped_scene" type="Node2D"]
+script = ExtResource("1_fh2mi")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(800.499, 450.999)
+scale = Vector2(1.16214, 1.14758)
+sprite_frames = SubResource("SpriteFrames_1mrae")
+animation = &"trip"
+
+[node name="Button" type="Button" parent="."]
+offset_left = 699.0
+offset_top = 480.0
+offset_right = 945.0
+offset_bottom = 570.0
+theme_override_fonts/font = ExtResource("3_uf5hh")
+theme_override_font_sizes/font_size = 25
+text = "Check behind"
+
+[node name="Textbox" parent="." node_paths=PackedStringArray("button") instance=ExtResource("3_lko8r")]
+offset_left = 76.0
+offset_top = -243.0
+offset_right = 1240.0
+offset_bottom = 401.0
+textbox_script = Array[String](["OOF!", "Is it still behind me?"])
+button = NodePath("../Button")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

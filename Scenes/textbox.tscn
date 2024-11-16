@@ -1,0 +1,34 @@
+[gd_scene load_steps=3 format=3 uid="uid://d3mpxfe57c8ux"]
+
+[ext_resource type="Script" path="res://Scripts/textbox.gd" id="1_1msk0"]
+[ext_resource type="FontFile" uid="uid://bv88h5obgefg8" path="res://fonts/VCR_OSD_MONO_1.001.ttf" id="2_52ame"]
+
+[node name="Textbox" type="Control" node_paths=PackedStringArray("label")]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1164.0
+offset_bottom = 644.0
+script = ExtResource("1_1msk0")
+label = NodePath("Panel/MarginContainer/Label")
+textbox_script = Array[String](["", "", "", "", "", ""])
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 389.0
+offset_top = 697.0
+offset_right = 1138.0
+offset_bottom = 835.0
+
+[node name="MarginContainer" type="MarginContainer" parent="Panel"]
+layout_mode = 0
+offset_left = 25.0
+offset_top = 18.0
+offset_right = 721.0
+offset_bottom = 142.0
+
+[node name="Label" type="Label" parent="Panel/MarginContainer"]
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_fonts/font = ExtResource("2_52ame")
+theme_override_font_sizes/font_size = 30
+autowrap_mode = 3

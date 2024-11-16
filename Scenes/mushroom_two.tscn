@@ -1,0 +1,210 @@
+[gd_scene load_steps=30 format=3 uid="uid://dx7i7hj7d4dkw"]
+
+[ext_resource type="Script" path="res://Scripts/mushroom_two.gd" id="1_lvior"]
+[ext_resource type="Texture2D" uid="uid://bjnfmo7ry3q2k" path="res://Images/Screenshot 2024-11-16 at 9.34.48 PM.png" id="2_n88h6"]
+[ext_resource type="PackedScene" uid="uid://d3mpxfe57c8ux" path="res://Scenes/textbox.tscn" id="3_fjbnp"]
+[ext_resource type="Texture2D" uid="uid://ls10ycbbrkm" path="res://Untitled design (15).png" id="3_vyp22"]
+[ext_resource type="Texture2D" uid="uid://t4npj72b4xte" path="res://assets/Pixel Art Flower Pack/Flower 2/Flower 2 - PURPLE.png" id="5_arc4d"]
+[ext_resource type="Texture2D" uid="uid://g42rdfio070m" path="res://assets/Pixel Art Flower Pack/Flower 6/Flower 6 - PINK 2.png" id="6_wq0p7"]
+[ext_resource type="Texture2D" uid="uid://bhwtmlv6nel6y" path="res://assets/Pixel Art Flower Pack/Flower 8/Flower 8 - PINK.png" id="7_mh8kt"]
+[ext_resource type="Texture2D" uid="uid://b271m5auay5j4" path="res://assets/Pixel Art Flower Pack/Flower 10/Flower 10 - PINK.png" id="8_wtwdh"]
+[ext_resource type="Texture2D" uid="uid://dqpoau0ardn5a" path="res://assets/Pixel Art Flower Pack/Flower 12/Flower 12 - PINK.png" id="9_md5a4"]
+[ext_resource type="Texture2D" uid="uid://bwutx4j1ye67n" path="res://assets/Pixel Art Flower Pack/Flower 13/Flower 13 - PURPLE.png" id="10_0qfnt"]
+[ext_resource type="Texture2D" uid="uid://c7gjk8ueuhgcp" path="res://assets/MiniDeer1.png" id="11_iolwv"]
+[ext_resource type="Texture2D" uid="uid://2ln4k02022o4" path="res://assets/Pixel Art Flower Pack/Flower 13/MiniBear.png" id="12_c4fm1"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ckidg"]
+atlas = ExtResource("11_iolwv")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6vs6l"]
+atlas = ExtResource("11_iolwv")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y13e4"]
+atlas = ExtResource("11_iolwv")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4d6j1"]
+atlas = ExtResource("11_iolwv")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_020q0"]
+atlas = ExtResource("11_iolwv")
+region = Rect2(0, 128, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_afbd4"]
+atlas = ExtResource("11_iolwv")
+region = Rect2(32, 128, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qp1vc"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ckidg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6vs6l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y13e4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4d6j1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_020q0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_afbd4")
+}],
+"loop": true,
+"name": &"deer",
+"speed": 2.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5li5r"]
+atlas = ExtResource("12_c4fm1")
+region = Rect2(0, 160, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_thes4"]
+atlas = ExtResource("12_c4fm1")
+region = Rect2(32, 160, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_34f5n"]
+atlas = ExtResource("12_c4fm1")
+region = Rect2(64, 160, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_blfmc"]
+atlas = ExtResource("12_c4fm1")
+region = Rect2(96, 160, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wgov2"]
+atlas = ExtResource("12_c4fm1")
+region = Rect2(128, 160, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2gyrp"]
+atlas = ExtResource("12_c4fm1")
+region = Rect2(160, 160, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t43kb"]
+atlas = ExtResource("12_c4fm1")
+region = Rect2(192, 160, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l6pbm"]
+atlas = ExtResource("12_c4fm1")
+region = Rect2(224, 160, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6n84f"]
+atlas = ExtResource("12_c4fm1")
+region = Rect2(256, 160, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_m1des"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5li5r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_thes4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_34f5n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_blfmc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wgov2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2gyrp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t43kb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l6pbm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6n84f")
+}],
+"loop": true,
+"name": &"bear",
+"speed": 3.0
+}]
+
+[node name="mushroom two" type="Node2D"]
+script = ExtResource("1_lvior")
+
+[node name="Screenshot2024-11-16At9_34_48 pm" type="Sprite2D" parent="."]
+position = Vector2(797, 453)
+scale = Vector2(1.1396, 1.14758)
+texture = ExtResource("2_n88h6")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 690.0
+offset_top = 830.0
+offset_right = 1850.0
+offset_bottom = 1486.0
+rotation = -1.77513
+scale = Vector2(0.25, 0.25)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
+icon = ExtResource("3_vyp22")
+flat = true
+
+[node name="Textbox" parent="." node_paths=PackedStringArray("button") instance=ExtResource("3_fjbnp")]
+offset_left = 61.0
+offset_top = 53.0
+offset_right = 1225.0
+offset_bottom = 697.0
+textbox_script = Array[String](["Wow!", "This is such a pretty trail.", "It's so quiet too.", "I haven't seen anyone this whole time.", "There's so many cute animals out!", "More people should hike at night!"])
+button = NodePath("../Button")
+
+[node name="Flower2-Purple" type="Sprite2D" parent="."]
+position = Vector2(176, 722)
+scale = Vector2(1.82308, 2.3254)
+texture = ExtResource("5_arc4d")
+
+[node name="Flower6-Pink2" type="Sprite2D" parent="."]
+position = Vector2(1266, 454)
+scale = Vector2(3.9, 3.82258)
+texture = ExtResource("6_wq0p7")
+
+[node name="Flower8-Pink" type="Sprite2D" parent="."]
+position = Vector2(72, 513)
+scale = Vector2(4.63333, 3.87931)
+texture = ExtResource("7_mh8kt")
+
+[node name="Flower10-Pink" type="Sprite2D" parent="."]
+position = Vector2(486, 305)
+scale = Vector2(2.68367, 2.98718)
+texture = ExtResource("8_wtwdh")
+
+[node name="Flower12-Pink" type="Sprite2D" parent="."]
+position = Vector2(1463.12, 801.125)
+scale = Vector2(6.31, 6.95588)
+texture = ExtResource("9_md5a4")
+
+[node name="Flower13-Purple" type="Sprite2D" parent="."]
+position = Vector2(1102, 307)
+scale = Vector2(1.56557, 2.125)
+texture = ExtResource("10_0qfnt")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(425, 420)
+scale = Vector2(6.15625, 6.54688)
+sprite_frames = SubResource("SpriteFrames_qp1vc")
+animation = &"deer"
+frame_progress = 0.428523
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
+position = Vector2(1018, 50)
+scale = Vector2(4.11718, 5.19531)
+sprite_frames = SubResource("SpriteFrames_m1des")
+animation = &"bear"
+frame_progress = 0.530253
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

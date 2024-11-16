@@ -1,0 +1,40 @@
+[gd_scene load_steps=6 format=3 uid="uid://bqcr2pj1eeauw"]
+
+[ext_resource type="Script" path="res://Scripts/poster.gd" id="1_og7qt"]
+[ext_resource type="Texture2D" uid="uid://ctti7o1k5wnym" path="res://Images/Screenshot 2024-11-16 at 9.32.37 PM.png" id="2_oersm"]
+[ext_resource type="PackedScene" uid="uid://d3mpxfe57c8ux" path="res://Scenes/textbox.tscn" id="3_5eq27"]
+[ext_resource type="FontFile" uid="uid://bv88h5obgefg8" path="res://fonts/VCR_OSD_MONO_1.001.ttf" id="3_vammx"]
+[ext_resource type="Texture2D" uid="uid://cepukevo3q2kc" path="res://Images/Untitled design (7).png" id="4_de2u3"]
+
+[node name="Poster" type="Node2D"]
+script = ExtResource("1_og7qt")
+
+[node name="Screenshot2024-11-16At9_32_37 pm" type="Sprite2D" parent="."]
+position = Vector2(802, 453)
+scale = Vector2(1.14387, 1.15522)
+texture = ExtResource("2_oersm")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 696.0
+offset_top = 778.0
+offset_right = 932.0
+offset_bottom = 882.0
+theme_override_fonts/font = ExtResource("3_vammx")
+theme_override_font_sizes/font_size = 25
+text = "Check behind?"
+
+[node name="Textbox" parent="." node_paths=PackedStringArray("button") instance=ExtResource("3_5eq27")]
+offset_left = 48.0
+offset_top = 55.0
+offset_right = 1212.0
+offset_bottom = 699.0
+textbox_script = Array[String](["A missing peron's poster?", "Kinda eery.", "I suddenly feel like I'm being watched."])
+button = NodePath("../Button")
+
+[node name="UntitledDesign(7)" type="Sprite2D" parent="."]
+position = Vector2(857, 616)
+rotation = 0.502293
+scale = Vector2(0.168374, 0.167039)
+texture = ExtResource("4_de2u3")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

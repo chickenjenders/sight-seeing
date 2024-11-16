@@ -1,0 +1,33 @@
+[gd_scene load_steps=5 format=3 uid="uid://dgnvjeyha0bni"]
+
+[ext_resource type="Script" path="res://Scripts/berry_turn.gd" id="1_2v6mo"]
+[ext_resource type="Texture2D" uid="uid://bjnfmo7ry3q2k" path="res://Images/Screenshot 2024-11-16 at 9.34.48 PM.png" id="1_opxbg"]
+[ext_resource type="FontFile" uid="uid://bv88h5obgefg8" path="res://fonts/VCR_OSD_MONO_1.001.ttf" id="3_41s6w"]
+[ext_resource type="PackedScene" uid="uid://d3mpxfe57c8ux" path="res://Scenes/textbox.tscn" id="3_65hy1"]
+
+[node name="berry_turn" type="Node2D"]
+script = ExtResource("1_2v6mo")
+
+[node name="Screenshot2024-11-16At9_34_48 pm" type="Sprite2D" parent="."]
+position = Vector2(794.5, 452.5)
+scale = Vector2(1.14174, 1.15394)
+texture = ExtResource("1_opxbg")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 681.0
+offset_top = 755.0
+offset_right = 904.0
+offset_bottom = 851.0
+theme_override_fonts/font = ExtResource("3_41s6w")
+theme_override_font_sizes/font_size = 25
+text = "Turn around"
+
+[node name="Textbox" parent="." node_paths=PackedStringArray("button") instance=ExtResource("3_65hy1")]
+offset_left = 55.0
+offset_top = 57.0
+offset_right = 1219.0
+offset_bottom = 701.0
+textbox_script = Array[String](["...", "There's no one there."])
+button = NodePath("../Button")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

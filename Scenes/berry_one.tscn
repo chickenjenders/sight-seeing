@@ -1,0 +1,278 @@
+[gd_scene load_steps=40 format=3 uid="uid://l5jacg5owwox"]
+
+[ext_resource type="Script" path="res://Scripts/berry_one.gd" id="1_b78f8"]
+[ext_resource type="Texture2D" uid="uid://ctti7o1k5wnym" path="res://Images/Screenshot 2024-11-16 at 9.32.37 PM.png" id="1_v54bu"]
+[ext_resource type="Texture2D" uid="uid://ls10ycbbrkm" path="res://Untitled design (15).png" id="3_4tpq2"]
+[ext_resource type="Texture2D" uid="uid://cy15evh25d6pd" path="res://assets/Pixel Art Flower Pack/Flower 7/Flower 7 - BLUE.png" id="4_uotma"]
+[ext_resource type="Texture2D" uid="uid://css02716v6hsd" path="res://assets/Pixel Art Flower Pack/Flower 1/Flower 1 - RED.png" id="5_aafsw"]
+[ext_resource type="Texture2D" uid="uid://dw3w162b8h8n7" path="res://assets/Pixel Art Flower Pack/Flower 11/Flower 11 - PINK.png" id="6_8b7jw"]
+[ext_resource type="Texture2D" uid="uid://cu0xelyhif0yk" path="res://assets/Pixel Art Flower Pack/Flower 11/Flower 11 - YELLOW.png" id="7_dvsx6"]
+[ext_resource type="Texture2D" uid="uid://c0wom12nk63n4" path="res://assets/Pixel Art Flower Pack/Flower 13/Flower 13 - COLORFUL.png" id="8_3osdt"]
+[ext_resource type="Texture2D" uid="uid://bwutx4j1ye67n" path="res://assets/Pixel Art Flower Pack/Flower 13/Flower 13 - PURPLE.png" id="9_ufhot"]
+[ext_resource type="Texture2D" uid="uid://dqpoau0ardn5a" path="res://assets/Pixel Art Flower Pack/Flower 12/Flower 12 - PINK.png" id="10_laa5v"]
+[ext_resource type="Texture2D" uid="uid://ccv5mkwgm2fdb" path="res://assets/Pixel Art Flower Pack/Flower 9/Flower 9 - PURPLE.png" id="11_v37uw"]
+[ext_resource type="Texture2D" uid="uid://dfly3fbxikqec" path="res://assets/MiniBunny.png" id="13_8v8u1"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_3u2ga"]
+load_path = "res://.godot/imported/MiniBird.png-773c919fcae17ef1154a278c6ba195e7.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hm8oo"]
+atlas = SubResource("CompressedTexture2D_3u2ga")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ysbn3"]
+atlas = SubResource("CompressedTexture2D_3u2ga")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qahub"]
+atlas = SubResource("CompressedTexture2D_3u2ga")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qxwpk"]
+atlas = SubResource("CompressedTexture2D_3u2ga")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qrjvu"]
+atlas = SubResource("CompressedTexture2D_3u2ga")
+region = Rect2(0, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1x15n"]
+atlas = SubResource("CompressedTexture2D_3u2ga")
+region = Rect2(16, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5npn6"]
+atlas = SubResource("CompressedTexture2D_3u2ga")
+region = Rect2(32, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iclhl"]
+atlas = SubResource("CompressedTexture2D_3u2ga")
+region = Rect2(48, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_utgr2"]
+atlas = SubResource("CompressedTexture2D_3u2ga")
+region = Rect2(0, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xvf8k"]
+atlas = SubResource("CompressedTexture2D_3u2ga")
+region = Rect2(16, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4jfi3"]
+atlas = SubResource("CompressedTexture2D_3u2ga")
+region = Rect2(32, 32, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_u7kpk"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hm8oo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ysbn3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qahub")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qxwpk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qrjvu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1x15n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5npn6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iclhl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_utgr2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xvf8k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4jfi3")
+}],
+"loop": true,
+"name": &"bird",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xapa6"]
+atlas = ExtResource("13_8v8u1")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ycbx8"]
+atlas = ExtResource("13_8v8u1")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_83fva"]
+atlas = ExtResource("13_8v8u1")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f3j55"]
+atlas = ExtResource("13_8v8u1")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_66lf7"]
+atlas = ExtResource("13_8v8u1")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_32qv0"]
+atlas = ExtResource("13_8v8u1")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_44mgb"]
+atlas = ExtResource("13_8v8u1")
+region = Rect2(64, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6ghlt"]
+atlas = ExtResource("13_8v8u1")
+region = Rect2(96, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nx617"]
+atlas = ExtResource("13_8v8u1")
+region = Rect2(0, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ai8c8"]
+atlas = ExtResource("13_8v8u1")
+region = Rect2(32, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6luw0"]
+atlas = ExtResource("13_8v8u1")
+region = Rect2(0, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tu5fk"]
+atlas = ExtResource("13_8v8u1")
+region = Rect2(32, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_asdky"]
+atlas = ExtResource("13_8v8u1")
+region = Rect2(64, 96, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_26vdr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xapa6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ycbx8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_83fva")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f3j55")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_66lf7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_32qv0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_44mgb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6ghlt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nx617")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ai8c8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6luw0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tu5fk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_asdky")
+}],
+"loop": true,
+"name": &"bunny",
+"speed": 5.0
+}]
+
+[node name="berry one" type="Node2D"]
+script = ExtResource("1_b78f8")
+
+[node name="Screenshot2024-11-16At9_32_37 pm" type="Sprite2D" parent="."]
+position = Vector2(802, 454)
+scale = Vector2(1.14103, 1.15776)
+texture = ExtResource("1_v54bu")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 710.0
+offset_top = 808.0
+offset_right = 1870.0
+offset_bottom = 1464.0
+rotation = -1.19031
+scale = Vector2(0.25, 0.25)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
+icon = ExtResource("3_4tpq2")
+flat = true
+
+[node name="Flower7-Blue" type="Sprite2D" parent="."]
+position = Vector2(538, 455)
+scale = Vector2(5.55882, 4.6)
+texture = ExtResource("4_uotma")
+
+[node name="Flower1-Red" type="Sprite2D" parent="."]
+position = Vector2(1146, 550)
+scale = Vector2(3.80952, 5.79032)
+texture = ExtResource("5_aafsw")
+
+[node name="Flower11-Pink" type="Sprite2D" parent="."]
+position = Vector2(261, 732)
+scale = Vector2(6.74138, 7.77778)
+texture = ExtResource("6_8b7jw")
+
+[node name="Flower11-Yellow" type="Sprite2D" parent="."]
+position = Vector2(1198, 328)
+scale = Vector2(4.01724, 4.5)
+texture = ExtResource("7_dvsx6")
+
+[node name="Flower13-Colorful" type="Sprite2D" parent="."]
+position = Vector2(133, 407)
+scale = Vector2(2.22131, 2.875)
+texture = ExtResource("8_3osdt")
+
+[node name="Flower13-Purple" type="Sprite2D" parent="."]
+position = Vector2(1472, 795)
+scale = Vector2(2.30328, 2.875)
+texture = ExtResource("9_ufhot")
+
+[node name="Flower12-Pink" type="Sprite2D" parent="."]
+position = Vector2(628, 279)
+scale = Vector2(5.7, 8.14706)
+texture = ExtResource("10_laa5v")
+
+[node name="Flower9-Purple" type="Sprite2D" parent="."]
+position = Vector2(1515, 504)
+scale = Vector2(3.42857, 3.63953)
+texture = ExtResource("11_v37uw")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(123, 546)
+scale = Vector2(5.8125, 6)
+sprite_frames = SubResource("SpriteFrames_u7kpk")
+animation = &"bird"
+frame_progress = 0.269157
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
+position = Vector2(1232, 302)
+scale = Vector2(5.1875, 6.15625)
+sprite_frames = SubResource("SpriteFrames_26vdr")
+animation = &"bunny"
+frame_progress = 0.95538
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

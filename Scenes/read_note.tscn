@@ -1,0 +1,41 @@
+[gd_scene load_steps=4 format=3 uid="uid://dv0p61xqsq27u"]
+
+[ext_resource type="Script" path="res://Scripts/read_note.gd" id="1_c0cuh"]
+[ext_resource type="FontFile" uid="uid://cj30ftt3q6sy7" path="res://fonts/HelpMe.ttf" id="2_ycv1s"]
+[ext_resource type="FontFile" uid="uid://bv88h5obgefg8" path="res://fonts/VCR_OSD_MONO_1.001.ttf" id="3_7oi5x"]
+
+[node name="read_note" type="Node2D"]
+script = ExtResource("1_c0cuh")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1595.0
+offset_bottom = 900.0
+
+[node name="note" type="Label" parent="."]
+offset_left = 352.0
+offset_top = 120.0
+offset_right = 1375.0
+offset_bottom = 589.0
+size_flags_horizontal = 3
+size_flags_vertical = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_ycv1s")
+theme_override_font_sizes/font_size = 100
+text = "  You should 
+  have packed 
+    a snack..."
+autowrap_mode = 2
+
+[node name="Button" type="Button" parent="."]
+offset_left = 632.0
+offset_top = 680.0
+offset_right = 932.0
+offset_bottom = 804.0
+theme_override_colors/font_hover_color = Color(0.74902, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_7oi5x")
+theme_override_font_sizes/font_size = 50
+text = "The End"
+flat = true
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

@@ -1,0 +1,39 @@
+[gd_scene load_steps=5 format=3 uid="uid://c2nlrh8ol558d"]
+
+[ext_resource type="Script" path="res://Scripts/titlescreen.gd" id="1_dh45m"]
+[ext_resource type="Texture2D" uid="uid://wgkrs3lp546e" path="res://Images/Untitled design (3).png" id="2_t8cf3"]
+[ext_resource type="FontFile" uid="uid://bv88h5obgefg8" path="res://fonts/VCR_OSD_MONO_1.001.ttf" id="3_bngqw"]
+[ext_resource type="FontFile" uid="uid://cj30ftt3q6sy7" path="res://fonts/HelpMe.ttf" id="4_x0vti"]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+script = ExtResource("1_dh45m")
+
+[node name="UntitledDesign(3)" type="Sprite2D" parent="."]
+position = Vector2(798, 445)
+scale = Vector2(1.39236, 1.37654)
+texture = ExtResource("2_t8cf3")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 671.0
+offset_top = 357.0
+offset_right = 925.0
+offset_bottom = 426.0
+theme_override_fonts/font = ExtResource("3_bngqw")
+theme_override_font_sizes/font_size = 47
+text = "PLAY"
+
+[node name="Label" type="Label" parent="."]
+offset_left = 533.0
+offset_top = 219.0
+offset_right = 1049.0
+offset_bottom = 310.0
+theme_override_colors/font_color = Color(0.692727, 0.0620122, 9.62615e-08, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 0.13, 0.13, 1)
+theme_override_fonts/font = ExtResource("4_x0vti")
+theme_override_font_sizes/font_size = 72
+text = "SightSeeing"
+horizontal_alignment = 1
+vertical_alignment = 3
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

@@ -1,0 +1,33 @@
+[gd_scene load_steps=5 format=3 uid="uid://5x8n7godyur8"]
+
+[ext_resource type="Script" path="res://Scripts/missing_people.gd" id="1_bdjbs"]
+[ext_resource type="FontFile" uid="uid://bv88h5obgefg8" path="res://fonts/VCR_OSD_MONO_1.001.ttf" id="3_h3wd2"]
+[ext_resource type="Texture2D" uid="uid://b1ajuusbc2ls0" path="res://Images/Untitled design (14).png" id="3_mu3ab"]
+[ext_resource type="PackedScene" uid="uid://d3mpxfe57c8ux" path="res://Scenes/textbox.tscn" id="3_yepu1"]
+
+[node name="missing_people" type="Node2D"]
+script = ExtResource("1_bdjbs")
+
+[node name="UntitledDesign(14)" type="Sprite2D" parent="."]
+position = Vector2(799.5, 454.5)
+scale = Vector2(1.38802, 1.39969)
+texture = ExtResource("3_mu3ab")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 657.0
+offset_top = 788.0
+offset_right = 913.0
+offset_bottom = 876.0
+theme_override_fonts/font = ExtResource("3_h3wd2")
+theme_override_font_sizes/font_size = 25
+text = "Turn back"
+
+[node name="Textbox" parent="." node_paths=PackedStringArray("button") instance=ExtResource("3_yepu1")]
+offset_left = 36.0
+offset_top = 63.0
+offset_right = 1200.0
+offset_bottom = 707.0
+textbox_script = Array[String](["What...", "WHAT?", "This can't be real!"])
+button = NodePath("../Button")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

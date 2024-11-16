@@ -1,0 +1,55 @@
+[gd_scene load_steps=5 format=3 uid="uid://b670c3gx17ys6"]
+
+[ext_resource type="Script" path="res://Scripts/main.gd" id="1_8qmss"]
+[ext_resource type="Texture2D" uid="uid://cw4cf76ujnjj2" path="res://Images/Screenshot 2024-11-17 at 6.03.33 PM.png" id="2_ckgbw"]
+[ext_resource type="FontFile" uid="uid://bv88h5obgefg8" path="res://fonts/VCR_OSD_MONO_1.001.ttf" id="3_814wq"]
+[ext_resource type="PackedScene" uid="uid://d3mpxfe57c8ux" path="res://Scenes/textbox.tscn" id="4_4cd0v"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_8qmss")
+
+[node name="Screenshot2024-11-17At6_03_33 pm" type="Sprite2D" parent="."]
+position = Vector2(800, 454.5)
+scale = Vector2(1.13533, 1.15903)
+texture = ExtResource("2_ckgbw")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 1153.0
+offset_bottom = 651.0
+
+[node name="mushroom" type="Button" parent="."]
+light_mask = 0
+visibility_layer = 0
+offset_left = 189.0
+offset_top = 511.0
+offset_right = 310.0
+offset_bottom = 590.0
+
+[node name="berries" type="Button" parent="."]
+light_mask = 0
+visibility_layer = 0
+offset_left = 1128.0
+offset_top = 272.0
+offset_right = 1471.0
+offset_bottom = 507.0
+
+[node name="Intruction" type="Label" parent="."]
+offset_left = 22.0
+offset_top = 19.0
+offset_right = 652.0
+offset_bottom = 60.0
+theme_override_fonts/font = ExtResource("3_814wq")
+theme_override_font_sizes/font_size = 25
+text = "Press SPACE to continue through dialogue..."
+
+[node name="Textbox" parent="." node_paths=PackedStringArray("button") instance=ExtResource("4_4cd0v")]
+offset_left = 35.0
+offset_top = 49.0
+offset_right = 1199.0
+offset_bottom = 693.0
+textbox_script = Array[String](["I found this berry bush.", "There's also these mushrooms.", "I could eat one of those before I start my hike.", "*Click on which food to eat."])
+button = NodePath("../mushroom")
+
+[connection signal="pressed" from="mushroom" to="." method="_on_mushroom_pressed"]
+[connection signal="pressed" from="mushroom" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="berries" to="." method="_on_berries_pressed"]
