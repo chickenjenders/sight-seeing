@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Scripts/missing_people.gd" id="1_bdjbs"]
 [ext_resource type="FontFile" uid="uid://bv88h5obgefg8" path="res://fonts/VCR_OSD_MONO_1.001.ttf" id="3_h3wd2"]
-[ext_resource type="Texture2D" uid="uid://b1ajuusbc2ls0" path="res://Images/Untitled design (14).png" id="3_mu3ab"]
+[ext_resource type="Texture2D" uid="uid://b1ajuusbc2ls0" path="res://Images/poster-scene.png" id="3_mu3ab"]
 [ext_resource type="PackedScene" uid="uid://d3mpxfe57c8ux" path="res://Scenes/textbox.tscn" id="3_yepu1"]
 
 [node name="missing_people" type="Node2D"]

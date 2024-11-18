@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://ctti7o1k5wnym" path="res://Images/Screenshot 2024-11-16 at 9.32.37 PM.png" id="2_c3jcv"]
 [ext_resource type="FontFile" uid="uid://bv88h5obgefg8" path="res://fonts/VCR_OSD_MONO_1.001.ttf" id="3_cog45"]
 [ext_resource type="PackedScene" uid="uid://d3mpxfe57c8ux" path="res://Scenes/textbox.tscn" id="3_g3w2y"]
-[ext_resource type="Texture2D" uid="uid://dycyp65sfcsyl" path="res://assets/Untitled design (16).png" id="5_8m1a7"]
+[ext_resource type="Texture2D" uid="uid://dycyp65sfcsyl" path="res://assets/flashlight.png" id="5_8m1a7"]
 
 [node name="Flashlight" type="Node2D"]
 script = ExtResource("1_2gri6")

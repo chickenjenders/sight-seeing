@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://ctti7o1k5wnym" path="res://Images/Screenshot 2024-11-16 at 9.32.37 PM.png" id="2_oersm"]
 [ext_resource type="PackedScene" uid="uid://d3mpxfe57c8ux" path="res://Scenes/textbox.tscn" id="3_5eq27"]
 [ext_resource type="FontFile" uid="uid://bv88h5obgefg8" path="res://fonts/VCR_OSD_MONO_1.001.ttf" id="3_vammx"]
-[ext_resource type="Texture2D" uid="uid://cepukevo3q2kc" path="res://Images/Untitled design (7).png" id="4_de2u3"]
+[ext_resource type="Texture2D" uid="uid://cepukevo3q2kc" path="res://Images/poster1.png" id="4_de2u3"]
 
 [node name="Poster" type="Node2D"]
 script = ExtResource("1_og7qt")
