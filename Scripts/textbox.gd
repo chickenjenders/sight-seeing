@@ -22,7 +22,7 @@ func _ready():
 		button.visible = false
 
 func _input(event):
-	if event is InputEventKey and event.pressed and event.keycode == KEY_SPACE:
+	if event is InputEventMouseButton and event.pressed:
 		advance_dialogue()
 
 func advance_dialogue():
