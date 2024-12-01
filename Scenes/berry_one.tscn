@@ -1,10 +1,9 @@
-[gd_scene load_steps=40 format=3 uid="uid://l5jacg5owwox"]
+[gd_scene load_steps=39 format=3 uid="uid://l5jacg5owwox"]
 
 [ext_resource type="Script" path="res://Scripts/berry_one.gd" id="1_b78f8"]
 [ext_resource type="Texture2D" uid="uid://ctti7o1k5wnym" path="res://Images/Screenshot 2024-11-16 at 9.32.37 PM.png" id="1_v54bu"]
 [ext_resource type="Texture2D" uid="uid://ls10ycbbrkm" path="res://Untitled design (15).png" id="3_4tpq2"]
 [ext_resource type="Texture2D" uid="uid://cy15evh25d6pd" path="res://assets/Pixel Art Flower Pack/Flower 7/Flower 7 - BLUE.png" id="4_uotma"]
-[ext_resource type="Texture2D" uid="uid://css02716v6hsd" path="res://assets/Pixel Art Flower Pack/Flower 1/Flower 1 - RED.png" id="5_aafsw"]
 [ext_resource type="Texture2D" uid="uid://dw3w162b8h8n7" path="res://assets/Pixel Art Flower Pack/Flower 11/Flower 11 - PINK.png" id="6_8b7jw"]
 [ext_resource type="Texture2D" uid="uid://cu0xelyhif0yk" path="res://assets/Pixel Art Flower Pack/Flower 11/Flower 11 - YELLOW.png" id="7_dvsx6"]
 [ext_resource type="Texture2D" uid="uid://c0wom12nk63n4" path="res://assets/Pixel Art Flower Pack/Flower 13/Flower 13 - COLORFUL.png" id="8_3osdt"]
@@ -226,11 +225,6 @@ position = Vector2(538, 455)
 scale = Vector2(5.55882, 4.6)
 texture = ExtResource("4_uotma")
 
-[node name="Flower1-Red" type="Sprite2D" parent="."]
-position = Vector2(1146, 550)
-scale = Vector2(3.80952, 5.79032)
-texture = ExtResource("5_aafsw")
-
 [node name="Flower11-Pink" type="Sprite2D" parent="."]
 position = Vector2(261, 732)
 scale = Vector2(6.74138, 7.77778)
@@ -269,7 +263,7 @@ animation = &"bird"
 frame_progress = 0.269157
 
 [node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
-position = Vector2(1232, 302)
+position = Vector2(1192, 414)
 scale = Vector2(5.1875, 6.15625)
 sprite_frames = SubResource("SpriteFrames_26vdr")
 animation = &"bunny"
