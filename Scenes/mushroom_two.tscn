@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://Scripts/mushroom_two.gd" id="1_lvior"]
 [ext_resource type="Texture2D" uid="uid://bjnfmo7ry3q2k" path="res://Images/Screenshot 2024-11-16 at 9.34.48 PM.png" id="2_n88h6"]
 [ext_resource type="PackedScene" uid="uid://d3mpxfe57c8ux" path="res://Scenes/textbox.tscn" id="3_fjbnp"]
-[ext_resource type="Texture2D" uid="uid://ls10ycbbrkm" path="res://Untitled design (15).png" id="3_vyp22"]
+[ext_resource type="Texture2D" uid="uid://ls10ycbbrkm" path="res://arrow.png" id="3_vyp22"]
 [ext_resource type="Texture2D" uid="uid://t4npj72b4xte" path="res://assets/Pixel Art Flower Pack/Flower 2/Flower 2 - PURPLE.png" id="5_arc4d"]
 [ext_resource type="Texture2D" uid="uid://g42rdfio070m" path="res://assets/Pixel Art Flower Pack/Flower 6/Flower 6 - PINK 2.png" id="6_wq0p7"]
 [ext_resource type="Texture2D" uid="uid://bhwtmlv6nel6y" path="res://assets/Pixel Art Flower Pack/Flower 8/Flower 8 - PINK.png" id="7_mh8kt"]

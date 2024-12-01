@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Scripts/berry_one.gd" id="1_b78f8"]
 [ext_resource type="Texture2D" uid="uid://ctti7o1k5wnym" path="res://Images/Screenshot 2024-11-16 at 9.32.37 PM.png" id="1_v54bu"]
-[ext_resource type="Texture2D" uid="uid://ls10ycbbrkm" path="res://Untitled design (15).png" id="3_4tpq2"]
+[ext_resource type="Texture2D" uid="uid://ls10ycbbrkm" path="res://arrow.png" id="3_4tpq2"]
 [ext_resource type="Texture2D" uid="uid://cy15evh25d6pd" path="res://assets/Pixel Art Flower Pack/Flower 7/Flower 7 - BLUE.png" id="4_uotma"]
 [ext_resource type="Texture2D" uid="uid://dw3w162b8h8n7" path="res://assets/Pixel Art Flower Pack/Flower 11/Flower 11 - PINK.png" id="6_8b7jw"]
 [ext_resource type="Texture2D" uid="uid://cu0xelyhif0yk" path="res://assets/Pixel Art Flower Pack/Flower 11/Flower 11 - YELLOW.png" id="7_dvsx6"]

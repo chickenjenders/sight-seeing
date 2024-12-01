@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://Scripts/berry_two.gd" id="1_rhysw"]
 [ext_resource type="Texture2D" uid="uid://bjnfmo7ry3q2k" path="res://Images/Screenshot 2024-11-16 at 9.34.48 PM.png" id="2_wqmk5"]
 [ext_resource type="PackedScene" uid="uid://d3mpxfe57c8ux" path="res://Scenes/textbox.tscn" id="3_0p1bn"]
-[ext_resource type="Texture2D" uid="uid://ls10ycbbrkm" path="res://Untitled design (15).png" id="3_ibled"]
+[ext_resource type="Texture2D" uid="uid://ls10ycbbrkm" path="res://arrow.png" id="3_ibled"]
 [ext_resource type="Texture2D" uid="uid://ccg2cylgl1ukn" path="res://assets/Pixel Art Flower Pack/FLower 5/Flower 5 - PURPLE.png" id="5_eg7kr"]
 [ext_resource type="Texture2D" uid="uid://cr8wsnxfeviau" path="res://assets/Pixel Art Flower Pack/Flower 1/Flower 1 - BLUE.png" id="6_od6uf"]
 [ext_resource type="Texture2D" uid="uid://dab2f212u53y4" path="res://assets/Pixel Art Flower Pack/Flower 12/Flower 12 - YELLOW.png" id="7_qyddm"]
