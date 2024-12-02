@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://dst8vte41s4nw"]
+[gd_scene load_steps=5 format=3 uid="uid://dst8vte41s4nw"]
 
 [ext_resource type="Texture2D" uid="uid://csf61mbfcbyo" path="res://Images/monster1.png" id="1_4w3d8"]
 [ext_resource type="Texture2D" uid="uid://sserqo2f4ilo" path="res://Images/monster2.png" id="2_1hhq3"]
+[ext_resource type="Script" path="res://Scripts/monster.gd" id="3_tl1tx"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_nlto5"]
 animations = [{
@@ -13,7 +14,7 @@ animations = [{
 "texture": ExtResource("2_1hhq3")
 }],
 "loop": true,
-"name": &"default",
+"name": &"running",
 "speed": 5.0
 }]
 
@@ -21,4 +22,6 @@ animations = [{
 position = Vector2(781, 368)
 scale = Vector2(0.269097, 0.438272)
 sprite_frames = SubResource("SpriteFrames_nlto5")
-frame_progress = 0.687935
+animation = &"running"
+frame_progress = 0.714991
+script = ExtResource("3_tl1tx")

@@ -1,0 +1,42 @@
+[gd_scene load_steps=6 format=3 uid="uid://dmntl7akibyrg"]
+
+[ext_resource type="Texture2D" uid="uid://bjlcarnxbcm7r" path="res://fonts/nightwalk.png" id="1_7x00a"]
+[ext_resource type="Script" path="res://Scripts/monster_run.gd" id="1_y3rpx"]
+[ext_resource type="PackedScene" uid="uid://dst8vte41s4nw" path="res://Scenes/monster.tscn" id="2_sgoei"]
+[ext_resource type="FontFile" uid="uid://bv88h5obgefg8" path="res://fonts/VCR_OSD_MONO_1.001.ttf" id="4_b51am"]
+[ext_resource type="PackedScene" uid="uid://d3mpxfe57c8ux" path="res://Scenes/textbox.tscn" id="5_ivft1"]
+
+[node name="monster_run" type="Node2D"]
+script = ExtResource("1_y3rpx")
+
+[node name="CatchTimer" type="Timer" parent="."]
+one_shot = true
+
+[node name="Nightwalk" type="Sprite2D" parent="."]
+position = Vector2(806, 451)
+scale = Vector2(1.40278, 1.41358)
+texture = ExtResource("1_7x00a")
+
+[node name="monster" parent="." instance=ExtResource("2_sgoei")]
+position = Vector2(698, 310)
+scale = Vector2(0.229167, 0.390432)
+
+[node name="Button" type="Button" parent="."]
+offset_left = 631.0
+offset_top = 715.0
+offset_right = 926.0
+offset_bottom = 836.0
+theme_override_fonts/font = ExtResource("4_b51am")
+theme_override_font_sizes/font_size = 30
+text = "RUN!"
+
+[node name="Textbox" parent="." node_paths=PackedStringArray("button") instance=ExtResource("5_ivft1")]
+offset_left = 35.0
+offset_top = 62.0
+offset_right = 1199.0
+offset_bottom = 706.0
+textbox_script = Array[String](["WHAT THE?!", "I GOTTA GET OUT OF HERE!!!"])
+button = NodePath("../Button")
+
+[connection signal="timeout" from="CatchTimer" to="." method="_on_catch_timer_timeout"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

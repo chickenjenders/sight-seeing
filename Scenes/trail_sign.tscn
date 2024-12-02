@@ -42,6 +42,10 @@ offset_bottom = 126.0
 flat = true
 
 [node name="Textbox" parent="." node_paths=PackedStringArray("button") instance=ExtResource("3_07amd")]
+offset_left = -24.0
+offset_top = 57.0
+offset_right = 1140.0
+offset_bottom = 701.0
 textbox_script = Array[String](["That was so weird.", "I need to find my way out of here.", "Huh? This map looks strange too.", "There was only one path before...", "And what's this red stuff?", "Whatever, I just need to find the exit!"])
 button = NodePath("../End")
 

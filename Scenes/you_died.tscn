@@ -1,0 +1,71 @@
+[gd_scene load_steps=5 format=3 uid="uid://wsf8jnrk50w4"]
+
+[ext_resource type="Texture2D" uid="uid://b3mhsftc2y551" path="res://Images/youtdie.png" id="1_ddabj"]
+[ext_resource type="Script" path="res://Scripts/you_died.gd" id="1_kc7j1"]
+[ext_resource type="FontFile" uid="uid://cj30ftt3q6sy7" path="res://fonts/HelpMe.ttf" id="2_bybqr"]
+[ext_resource type="FontFile" uid="uid://bv88h5obgefg8" path="res://fonts/VCR_OSD_MONO_1.001.ttf" id="3_rglc5"]
+
+[node name="you_died" type="Node2D"]
+script = ExtResource("1_kc7j1")
+
+[node name="Youtdie" type="Sprite2D" parent="."]
+position = Vector2(808, 449)
+scale = Vector2(1.39236, 1.38889)
+texture = ExtResource("1_ddabj")
+
+[node name="youdied" type="Label" parent="."]
+offset_left = 1074.0
+offset_top = 45.0
+offset_right = 1479.0
+offset_bottom = 145.0
+theme_override_colors/font_color = Color(1, 0.267088, 0.207117, 1)
+theme_override_fonts/font = ExtResource("2_bybqr")
+theme_override_font_sizes/font_size = 75
+text = "YOU DIED!"
+
+[node name="Labelome" type="Label" parent="."]
+offset_left = 977.0
+offset_top = 171.0
+offset_right = 1575.0
+offset_bottom = 228.0
+theme_override_fonts/font = ExtResource("3_rglc5")
+theme_override_font_sizes/font_size = 30
+text = "You thought that was a hallucination?!"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Labeltwo" type="Label" parent="."]
+offset_left = 941.0
+offset_top = 233.0
+offset_right = 1589.0
+offset_bottom = 414.0
+theme_override_fonts/font = ExtResource("3_rglc5")
+theme_override_font_sizes/font_size = 30
+text = "Well, now you're dead and your poster will join the other sad victims of Sightseer's Trail."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Label" type="Label" parent="."]
+offset_left = 1018.0
+offset_top = 445.0
+offset_right = 1515.0
+offset_bottom = 524.0
+theme_override_fonts/font = ExtResource("3_rglc5")
+theme_override_font_sizes/font_size = 30
+text = "Don't act shocked, who the hell hikes alone at night?!"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Button" type="Button" parent="."]
+offset_left = 1128.0
+offset_top = 611.0
+offset_right = 1432.0
+offset_bottom = 751.0
+theme_override_colors/font_hover_pressed_color = Color(1, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_bybqr")
+theme_override_font_sizes/font_size = 50
+text = "The End"
