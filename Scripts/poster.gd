@@ -1,6 +1,6 @@
 extends Node2D
 
 func _on_button_pressed() -> void:
-	var mushroom_turn = preload("res://Scenes/mushroom_turn.tscn").instantiate()
-	get_tree().root.add_child(mushroom_turn)
+	var look_closer_poster = preload("res://Scenes/look_closer_poster.tscn").instantiate()
+	get_tree().root.add_child(look_closer_poster)
 	queue_free()

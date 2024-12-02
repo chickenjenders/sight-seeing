@@ -1,0 +1,33 @@
+[gd_scene load_steps=5 format=3 uid="uid://bq8knaldq0dsj"]
+
+[ext_resource type="Texture2D" uid="uid://cr8ke573twkg4" path="res://Images/closeupcampsite.png" id="1_h4fat"]
+[ext_resource type="Script" path="res://Scripts/look_closer_campsite.gd" id="1_ty21j"]
+[ext_resource type="FontFile" uid="uid://bv88h5obgefg8" path="res://fonts/VCR_OSD_MONO_1.001.ttf" id="2_kabuq"]
+[ext_resource type="PackedScene" uid="uid://d3mpxfe57c8ux" path="res://Scenes/textbox.tscn" id="3_asf54"]
+
+[node name="look_closer_campsite" type="Node2D"]
+script = ExtResource("1_ty21j")
+
+[node name="Closeupcampsite" type="Sprite2D" parent="."]
+position = Vector2(791, 475)
+scale = Vector2(1.44271, 1.45679)
+texture = ExtResource("1_h4fat")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 654.0
+offset_top = 764.0
+offset_right = 871.0
+offset_bottom = 868.0
+theme_override_fonts/font = ExtResource("2_kabuq")
+theme_override_font_sizes/font_size = 25
+text = "Check Tent"
+
+[node name="Textbox" parent="." node_paths=PackedStringArray("button") instance=ExtResource("3_asf54")]
+offset_left = 4.0
+offset_top = 52.0
+offset_right = 1168.0
+offset_bottom = 696.0
+textbox_script = Array[String](["Is this all blood?", "There's a fire still burning.", "It looks abandoned, but I should check to be sure."])
+button = NodePath("../Button")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

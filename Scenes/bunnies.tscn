@@ -1,0 +1,33 @@
+[gd_scene load_steps=5 format=3 uid="uid://2n4q445h2pjv"]
+
+[ext_resource type="Texture2D" uid="uid://lthmnsplf06x" path="res://Images/bunnies.png" id="1_pcyc4"]
+[ext_resource type="Script" path="res://Scripts/bunnies.gd" id="1_x6ao5"]
+[ext_resource type="FontFile" uid="uid://bv88h5obgefg8" path="res://fonts/VCR_OSD_MONO_1.001.ttf" id="2_3id5i"]
+[ext_resource type="PackedScene" uid="uid://d3mpxfe57c8ux" path="res://Scenes/textbox.tscn" id="3_2v1kx"]
+
+[node name="bunnies" type="Node2D"]
+script = ExtResource("1_x6ao5")
+
+[node name="Bunnies" type="Sprite2D" parent="."]
+position = Vector2(805, 453)
+scale = Vector2(1.39062, 1.39506)
+texture = ExtResource("1_pcyc4")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 680.0
+offset_top = 762.0
+offset_right = 920.0
+offset_bottom = 862.0
+theme_override_fonts/font = ExtResource("2_3id5i")
+theme_override_font_sizes/font_size = 25
+text = "Turn around"
+
+[node name="Textbox" parent="." node_paths=PackedStringArray("button") instance=ExtResource("3_2v1kx")]
+offset_left = 38.0
+offset_top = 48.0
+offset_right = 1202.0
+offset_bottom = 692.0
+textbox_script = Array[String](["B-bunnies?", "Are they possessed?!", "You know what...", "I'm just gonna take my chances and go back the way I came."])
+button = NodePath("../Button")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

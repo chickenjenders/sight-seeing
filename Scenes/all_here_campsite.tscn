@@ -1,0 +1,33 @@
+[gd_scene load_steps=5 format=3 uid="uid://dv4jbypj44c6v"]
+
+[ext_resource type="Texture2D" uid="uid://bt2wxgsqfchup" path="res://Images/campsitepeople.png" id="1_mlt8m"]
+[ext_resource type="Script" path="res://Scripts/all_here_campsite.gd" id="1_ynn7l"]
+[ext_resource type="PackedScene" uid="uid://d3mpxfe57c8ux" path="res://Scenes/textbox.tscn" id="2_54bkg"]
+[ext_resource type="FontFile" uid="uid://bv88h5obgefg8" path="res://fonts/VCR_OSD_MONO_1.001.ttf" id="3_r21mn"]
+
+[node name="all_here_campsite" type="Node2D"]
+script = ExtResource("1_ynn7l")
+
+[node name="Campsitepeople" type="Sprite2D" parent="."]
+position = Vector2(802, 451)
+scale = Vector2(1.39236, 1.39506)
+texture = ExtResource("1_mlt8m")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 632.0
+offset_top = 766.0
+offset_right = 932.0
+offset_bottom = 883.0
+theme_override_fonts/font = ExtResource("3_r21mn")
+theme_override_font_sizes/font_size = 25
+text = "Turn Back"
+
+[node name="Textbox" parent="." node_paths=PackedStringArray("button") instance=ExtResource("2_54bkg")]
+offset_left = 22.0
+offset_top = 60.0
+offset_right = 1186.0
+offset_bottom = 704.0
+textbox_script = Array[String](["Who are...", "Wait, WHAT?!", "This is soooo not real.", "Nope, nope! I'm not doing this!", "I'm just gonna take my chances with the path I came from, I don't even care!"])
+button = NodePath("../Button")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

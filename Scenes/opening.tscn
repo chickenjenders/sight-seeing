@@ -38,7 +38,7 @@ offset_right = 1300.0
 offset_bottom = 557.0
 theme_override_fonts/font = ExtResource("1_ox8jl")
 theme_override_font_sizes/font_size = 30
-text = "Thankfully, I found some edible things on the way to trail."
+text = "Thankfully, I found some edible things on the way to the trail."
 
 [node name="Start" type="Button" parent="."]
 offset_left = 670.0
@@ -65,5 +65,5 @@ theme_override_fonts/font = ExtResource("1_ox8jl")
 theme_override_font_sizes/font_size = 25
 text = "Click to continue..."
 
-[connection signal="pressed" from="Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="Start" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Start" to="." method="_on_start_pressed"]

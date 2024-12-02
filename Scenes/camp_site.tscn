@@ -20,14 +20,14 @@ offset_right = 926.0
 offset_bottom = 855.0
 theme_override_fonts/font = ExtResource("3_st4p3")
 theme_override_font_sizes/font_size = 25
-text = "Turn back"
+text = "Look Closer"
 
 [node name="Textbox" parent="." node_paths=PackedStringArray("button") instance=ExtResource("3_o0se6")]
 offset_left = 54.0
 offset_top = 57.0
 offset_right = 1218.0
 offset_bottom = 701.0
-textbox_script = Array[String](["What...", "the...", "This is not real."])
+textbox_script = Array[String](["What...", "the...", "Is this real?"])
 button = NodePath("../Button")
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

@@ -1,0 +1,33 @@
+[gd_scene load_steps=5 format=3 uid="uid://dk58y8vwkvdky"]
+
+[ext_resource type="Script" path="res://Scripts/carrots.gd" id="1_4yjov"]
+[ext_resource type="Texture2D" uid="uid://dsw3jw7ntm611" path="res://Images/carrots.png" id="1_jqayc"]
+[ext_resource type="PackedScene" uid="uid://d3mpxfe57c8ux" path="res://Scenes/textbox.tscn" id="2_2n30b"]
+[ext_resource type="FontFile" uid="uid://bv88h5obgefg8" path="res://fonts/VCR_OSD_MONO_1.001.ttf" id="3_o7aj7"]
+
+[node name="carrots" type="Node2D"]
+script = ExtResource("1_4yjov")
+
+[node name="Carrots" type="Sprite2D" parent="."]
+position = Vector2(792.5, 440.75)
+scale = Vector2(1.39844, 1.43287)
+texture = ExtResource("1_jqayc")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 626.0
+offset_top = 776.0
+offset_right = 879.0
+offset_bottom = 899.0
+theme_override_fonts/font = ExtResource("3_o7aj7")
+theme_override_font_sizes/font_size = 25
+text = "Keep walking"
+
+[node name="Textbox" parent="." node_paths=PackedStringArray("button") instance=ExtResource("2_2n30b")]
+offset_left = 30.0
+offset_top = 79.0
+offset_right = 1194.0
+offset_bottom = 723.0
+textbox_script = Array[String](["Are those... carrots?", "Why are they neon?", "Someone drew a message under them.", "I think I'm being followed.", "I just have to keep going."])
+button = NodePath("../Button")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

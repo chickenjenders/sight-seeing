@@ -14,10 +14,10 @@ scale = Vector2(1.14174, 1.15394)
 texture = ExtResource("1_opxbg")
 
 [node name="Button" type="Button" parent="."]
-offset_left = 681.0
-offset_top = 755.0
-offset_right = 904.0
-offset_bottom = 851.0
+offset_left = 667.0
+offset_top = 665.0
+offset_right = 890.0
+offset_bottom = 761.0
 theme_override_fonts/font = ExtResource("3_41s6w")
 theme_override_font_sizes/font_size = 25
 text = "Turn around"
@@ -27,7 +27,7 @@ offset_left = 55.0
 offset_top = 57.0
 offset_right = 1219.0
 offset_bottom = 701.0
-textbox_script = Array[String](["...", "There's no one there."])
+textbox_script = Array[String](["...", "There's no one there.", "...Duh"])
 button = NodePath("../Button")
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

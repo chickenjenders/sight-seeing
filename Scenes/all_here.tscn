@@ -1,0 +1,34 @@
+[gd_scene load_steps=5 format=3 uid="uid://ctkux44djy3tf"]
+
+[ext_resource type="Script" path="res://Scripts/all_here.gd" id="1_ig4gx"]
+[ext_resource type="Texture2D" uid="uid://dct75ct2xuntb" path="res://Images/missingpeople.png" id="1_vy356"]
+[ext_resource type="FontFile" uid="uid://bv88h5obgefg8" path="res://fonts/VCR_OSD_MONO_1.001.ttf" id="2_kysav"]
+[ext_resource type="PackedScene" uid="uid://d3mpxfe57c8ux" path="res://Scenes/textbox.tscn" id="3_v8poj"]
+
+[node name="all_here" type="Node2D"]
+script = ExtResource("1_ig4gx")
+
+[node name="Missingpeople" type="Sprite2D" parent="."]
+position = Vector2(799, 454)
+scale = Vector2(1.38368, 1.40432)
+texture = ExtResource("1_vy356")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 662.0
+offset_top = 760.0
+offset_right = 893.0
+offset_bottom = 886.0
+theme_override_fonts/font = ExtResource("2_kysav")
+theme_override_font_sizes/font_size = 25
+text = "Leave
+"
+
+[node name="Textbox" parent="." node_paths=PackedStringArray("button") instance=ExtResource("3_v8poj")]
+offset_left = 24.0
+offset_top = 60.0
+offset_right = 1188.0
+offset_bottom = 704.0
+textbox_script = Array[String](["Uh....", "This is a prank... right?", "Haha, good one!", "I'm gonna just...", "find a different path!"])
+button = NodePath("../Button")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

@@ -1,6 +1,6 @@
 extends Node2D
 
 func _on_button_pressed() -> void:
-	var run_scene = preload("res://Scenes/run_scene.tscn").instantiate()
-	get_tree().root.add_child(run_scene)
+	var monster_run = preload("res://Scenes/monster_run.tscn").instantiate()
+	get_tree().root.add_child(monster_run)
 	queue_free()

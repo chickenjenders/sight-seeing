@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://dst8vte41s4nw"]
+
+[ext_resource type="Texture2D" uid="uid://csf61mbfcbyo" path="res://Images/monster1.png" id="1_4w3d8"]
+[ext_resource type="Texture2D" uid="uid://sserqo2f4ilo" path="res://Images/monster2.png" id="2_1hhq3"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_nlto5"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_4w3d8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_1hhq3")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="monster" type="AnimatedSprite2D"]
+position = Vector2(781, 368)
+scale = Vector2(0.269097, 0.438272)
+sprite_frames = SubResource("SpriteFrames_nlto5")
+frame_progress = 0.687935

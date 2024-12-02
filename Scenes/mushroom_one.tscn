@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=3 uid="uid://d1ggdqhbhxeo"]
+[gd_scene load_steps=30 format=3 uid="uid://d1ggdqhbhxeo"]
 
 [ext_resource type="Script" path="res://Scripts/mushroom_one.gd" id="1_o6uwc"]
 [ext_resource type="Texture2D" uid="uid://ctti7o1k5wnym" path="res://Images/Screenshot 2024-11-16 at 9.32.37 PM.png" id="2_c3h20"]
@@ -7,7 +7,6 @@
 [ext_resource type="Texture2D" uid="uid://1w81h0ifacjw" path="res://assets/Pixel Art Flower Pack/Flower 12/Flower 12 - RED.png" id="5_3e1q4"]
 [ext_resource type="Texture2D" uid="uid://cvai7jrqd7rld" path="res://assets/Pixel Art Flower Pack/Flower 11/Flower 11 - RED.png" id="6_kltmf"]
 [ext_resource type="Texture2D" uid="uid://dffw7lftuurl0" path="res://assets/Pixel Art Flower Pack/Flower 7/Flower 7 - PINK.png" id="7_j6d6n"]
-[ext_resource type="Texture2D" uid="uid://d1csvjgqa78on" path="res://assets/Pixel Art Flower Pack/Flower 1/Flower 1 - YELLOW.png" id="8_ngh7n"]
 [ext_resource type="Texture2D" uid="uid://dfly3fbxikqec" path="res://assets/MiniBunny.png" id="9_1idgy"]
 [ext_resource type="Texture2D" uid="uid://bkbn45ybenrtr" path="res://assets/MiniFox.png" id="10_w6x2e"]
 
@@ -191,11 +190,6 @@ texture = ExtResource("6_kltmf")
 position = Vector2(746, 426)
 scale = Vector2(4.08824, 3.4)
 texture = ExtResource("7_j6d6n")
-
-[node name="Flower1-Yellow" type="Sprite2D" parent="."]
-position = Vector2(1436.25, 805.125)
-scale = Vector2(3.58333, 4.84677)
-texture = ExtResource("8_ngh7n")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(471, 343)

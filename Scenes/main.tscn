@@ -40,7 +40,7 @@ offset_right = 652.0
 offset_bottom = 60.0
 theme_override_fonts/font = ExtResource("3_814wq")
 theme_override_font_sizes/font_size = 25
-text = "Press SPACE to continue through dialogue..."
+text = "Left click to continue through dialogue..."
 
 [node name="Textbox" parent="." node_paths=PackedStringArray("button") instance=ExtResource("4_4cd0v")]
 offset_left = 35.0

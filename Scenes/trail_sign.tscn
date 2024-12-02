@@ -1,0 +1,51 @@
+[gd_scene load_steps=4 format=3 uid="uid://vd24o5yacbet"]
+
+[ext_resource type="Texture2D" uid="uid://cu405gy6hppqf" path="res://Images/trailsign.png" id="1_t4w23"]
+[ext_resource type="Script" path="res://Scripts/trail_sign.gd" id="1_x5w8l"]
+[ext_resource type="PackedScene" uid="uid://d3mpxfe57c8ux" path="res://Scenes/textbox.tscn" id="3_07amd"]
+
+[node name="trail_sign" type="Node2D"]
+script = ExtResource("1_x5w8l")
+
+[node name="Trailsign" type="Sprite2D" parent="."]
+position = Vector2(802, 454)
+scale = Vector2(1.39583, 1.40432)
+texture = ExtResource("1_t4w23")
+
+[node name="End" type="Button" parent="."]
+offset_left = 668.0
+offset_top = 53.0
+offset_right = 788.0
+offset_bottom = 121.0
+theme_override_colors/icon_hover_color = Color(0.960784, 0.952941, 0, 1)
+flat = true
+
+[node name="bunny" type="Button" parent="."]
+offset_left = 423.0
+offset_top = 124.0
+offset_right = 471.0
+offset_bottom = 180.0
+flat = true
+
+[node name="bunnys" type="Button" parent="."]
+offset_left = 549.0
+offset_top = 72.0
+offset_right = 592.0
+offset_bottom = 127.0
+flat = true
+
+[node name="bunnies" type="Button" parent="."]
+offset_left = 906.0
+offset_top = 76.0
+offset_right = 955.0
+offset_bottom = 126.0
+flat = true
+
+[node name="Textbox" parent="." node_paths=PackedStringArray("button") instance=ExtResource("3_07amd")]
+textbox_script = Array[String](["That was so weird.", "I need to find my way out of here.", "Huh? This map looks strange too.", "There was only one path before...", "And what's this red stuff?", "Whatever, I just need to find the exit!"])
+button = NodePath("../End")
+
+[connection signal="pressed" from="End" to="." method="_on_end_pressed"]
+[connection signal="pressed" from="bunny" to="." method="_on_bunny_pressed"]
+[connection signal="pressed" from="bunnys" to="." method="_on_bunnys_pressed"]
+[connection signal="pressed" from="bunnies" to="." method="_on_bunnies_pressed"]

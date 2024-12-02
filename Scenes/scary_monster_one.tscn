@@ -1,0 +1,33 @@
+[gd_scene load_steps=5 format=3 uid="uid://dgewjireucyhv"]
+
+[ext_resource type="Script" path="res://Scripts/scary_mushroom_one.gd" id="1_4o8gv"]
+[ext_resource type="Texture2D" uid="uid://cu42whnlwplat" path="res://Images/Screenshot 2024-11-17 at 6.01.27 PM.png" id="2_2vpf0"]
+[ext_resource type="FontFile" uid="uid://bv88h5obgefg8" path="res://fonts/VCR_OSD_MONO_1.001.ttf" id="3_h4t2k"]
+[ext_resource type="PackedScene" uid="uid://d3mpxfe57c8ux" path="res://Scenes/textbox.tscn" id="4_43o3h"]
+
+[node name="scary_monster_one" type="Node2D"]
+script = ExtResource("1_4o8gv")
+
+[node name="Screenshot2024-11-17At6_01_27 pm" type="Sprite2D" parent="."]
+position = Vector2(802, 454.5)
+scale = Vector2(1.13533, 1.15649)
+texture = ExtResource("2_2vpf0")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 661.0
+offset_top = 772.0
+offset_right = 927.0
+offset_bottom = 874.0
+theme_override_fonts/font = ExtResource("3_h4t2k")
+theme_override_font_sizes/font_size = 25
+text = "Look closer"
+
+[node name="Textbox" parent="." node_paths=PackedStringArray("button") instance=ExtResource("4_43o3h")]
+offset_left = 49.0
+offset_top = 63.0
+offset_right = 1213.0
+offset_bottom = 707.0
+textbox_script = Array[String](["Huh?", "Is someone there?"])
+button = NodePath("../Button")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

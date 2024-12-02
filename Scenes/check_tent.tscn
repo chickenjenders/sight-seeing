@@ -1,0 +1,33 @@
+[gd_scene load_steps=5 format=3 uid="uid://bthk7ccr3qyoe"]
+
+[ext_resource type="Script" path="res://Scripts/check_tent.gd" id="1_64t4i"]
+[ext_resource type="Texture2D" uid="uid://ctbafqy3d4lo6" path="res://Images/insidetent.png" id="1_qlbxe"]
+[ext_resource type="FontFile" uid="uid://bv88h5obgefg8" path="res://fonts/VCR_OSD_MONO_1.001.ttf" id="2_v1mtu"]
+[ext_resource type="PackedScene" uid="uid://d3mpxfe57c8ux" path="res://Scenes/textbox.tscn" id="3_0pl6q"]
+
+[node name="check_tent" type="Node2D"]
+script = ExtResource("1_64t4i")
+
+[node name="Insidetent" type="Sprite2D" parent="."]
+position = Vector2(801.5, 451.5)
+scale = Vector2(1.3967, 1.39352)
+texture = ExtResource("1_qlbxe")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 658.0
+offset_top = 787.0
+offset_right = 858.0
+offset_bottom = 893.0
+theme_override_fonts/font = ExtResource("2_v1mtu")
+theme_override_font_sizes/font_size = 25
+text = "Go Back"
+
+[node name="Textbox" parent="." node_paths=PackedStringArray("button") instance=ExtResource("3_0pl6q")]
+offset_left = 30.0
+offset_top = 52.0
+offset_right = 1194.0
+offset_bottom = 696.0
+textbox_script = Array[String](["Well, that's not creepy at all.", "I can't tell if this is real or a an elaborate prank.", "It's definitely empty here, though."])
+button = NodePath("../Button")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

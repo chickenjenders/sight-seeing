@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://dnqciliw0pdk4"]
+
+[ext_resource type="Script" path="res://Scripts/night_walk.gd" id="1_8c0q1"]
+[ext_resource type="Texture2D" uid="uid://bjlcarnxbcm7r" path="res://fonts/nightwalk.png" id="2_61aje"]
+[ext_resource type="Texture2D" uid="uid://ls10ycbbrkm" path="res://arrow.png" id="3_m8ns5"]
+
+[node name="night_walk" type="Node2D"]
+script = ExtResource("1_8c0q1")
+
+[node name="Nightwalk" type="Sprite2D" parent="."]
+position = Vector2(802, 452)
+scale = Vector2(1.39931, 1.39815)
+texture = ExtResource("2_61aje")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 610.0
+offset_top = 988.0
+offset_right = 1770.0
+offset_bottom = 1644.0
+rotation = -1.6617
+scale = Vector2(0.5, 0.5)
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
+icon = ExtResource("3_m8ns5")
+flat = true
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
